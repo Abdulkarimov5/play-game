@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants vs. Zombies</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            font-size: 3em;
+        }
+
+        main {
+            margin-top: 150px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: auto;
+        }
+
+        .menu-item {
+            height: 270px;
+            width: 300px;
+            background-color: grey;
+            box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            background-size: cover;
+            background-size: 100%;
+            background-position: center center;
+            cursor: pointer;
+            transition: all 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: grid;
+            place-items: center;
+        }
+
+        .menu-item:hover {
+            background-size: 140%;
+        }
+
+        .menu-item-lg {
+            width: 460px;
+        }
+
+        @media (max-width: 1024px) {
+            .menu-item-lg {
+                width: 400px;
+                height: 220px;
+            }
+        }
+
+        .game-1 {
+            background-image: url('images/PLANTS_vs._ZOMBIES/PvZ_1.jpg');
+        }
+
+        .game-2 {
+            background-image: url('images/PLANTS_vs._ZOMBIES/Pvz_2.webp');
+        }
+
+        .menu-item-shop {
+            width: 160px;
+            height: 120px;
+            background-color: rgba(255,255,255,0.8);
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+        }
+
+        .menu-item-shop h5 {
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .menu-item-shop p {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="text">Вселенная Plants vs. Zombies</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="menu-item menu-item-lg game-1">
+                <div class="menu-item-shop">
+                    <h5>Plants vs. Zombies</h5>
+                    <p>Релиз 2009 года</p>
+                </div>
+            </div>
+
+            <div class="menu-item menu-item-lg game-2">
+                <div class="menu-item-shop">
+                    <h5>Plants vs. Zombies 2: It’s About Time</h5>
+                    <p>Релиз 2013 года</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
