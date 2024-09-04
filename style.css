@@ -69,6 +69,10 @@ a:visited {
 }
 
 @media (max-width: 1024px) {
+    body {
+        padding: 5%;
+    }
+    
     .menu-item-lg {
         width: 400px;
         height: 270px;
