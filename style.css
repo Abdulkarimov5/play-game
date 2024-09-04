@@ -68,22 +68,6 @@ a:visited {
     width: 460px;
 }
 
-@media screen and (max-width: 1024px) {
-    body {
-        padding: 5%;
-    }
-    
-    .menu-item-lg {
-        width: 400px;
-        height: 270px;
-    }
-
-    .text {
-        font-size: 2em;
-        text-align: center;
-    }
-}
-
 .game-1 {
     background-image: url('images/STALKER/Обложка.jpg');
 }
@@ -122,4 +106,20 @@ a:visited {
 .menu-item-shop p {
     font-size: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 5%;
+    }
+    
+    .menu-item-lg {
+        width: 400px;
+        height: 270px;
+    }
+
+    .text {
+        font-size: 2em;
+        text-align: center;
+    }
 }
