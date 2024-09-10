@@ -34,22 +34,8 @@ main {
     margin: auto;
 }
 
-.symbol {
-    font-size: 3em;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
 .menu-item {
-    height: 340px;
+    height: 250px;
     width: 300px;
     background-color: grey;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
@@ -72,28 +58,40 @@ a:visited {
     width: 460px;
 }
 
+@media screen and (max-width: 1024px) {
+    .menu-item-lg {
+        width: 400px;
+        height: 200px;
+    }
+
+    .text {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
 .game-1 {
-    background-image: url('stalker/STALKER/Обложка.jpg');
+    background-image: url('TOTAL_WAR/Warhammer_2.jpg');
 }
 
 .game-2 {
-    background-image: url('metro2033/METRO-2033/Обложка.webp');
+    background-image: url('TOTAL_WAR/Attila.jpg');
 }
 
 .game-3 {
-    background-image: url('total_war/TOTAL_WAR/Обложка.webp');
+    background-image: url('TOTAL_WAR/Rome_2.jpg');
 }
 
 .game-4 {
-    background-image: url('pvz/PLANTS_vs._ZOMBIES/Обложка.jpeg');
+    background-image: url('TOTAL_WAR/Shogun_2.jpg');
 }
 
 .game-5 {
-    background-image: url('mass_effect/MASS_EFFECT/Обложка.webp');
+    background-image: url('TOTAL_WAR/Napoleon.jpg');
 }
 
 .menu-item-shop {
-    width: 150px;
+    width: 170px;
     height: 120px;
     background-color: rgba(255,255,255,0.8);
     display: grid;
@@ -112,14 +110,16 @@ a:visited {
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
-    .menu-item-lg {
-        width: 400px;
-        height: 270px;
-    }
+.symbol {
+    font-size: 3em;
+}
 
-    .text {
-        font-size: 2em;
-        text-align: center;
-    }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
