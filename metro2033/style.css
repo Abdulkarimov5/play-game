@@ -14,13 +14,7 @@ header {
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.dropbtn {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    justify-content: space-evenly;
 }
 
 .dropdown {
@@ -38,9 +32,7 @@ header {
 }
 
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     font-size: 1.2em;
 }
@@ -49,7 +41,7 @@ header {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: wheat;}
+.dropdown:hover .text2 {background-color: wheat;}
 
 .text {
     font-size: 3em;
@@ -57,8 +49,12 @@ header {
 
 .text2 {
     font-size: 1.5em;
+    padding: 16px;
 }
 
+.right {
+    display: flex;
+}
 
 main {
     margin-top: 150px;
@@ -90,18 +86,6 @@ main {
 
 .menu-item-lg {
     width: 460px;
-}
-
-@media screen and (max-width: 1024px) {
-    .menu-item {
-        width: 400px;
-        height: 470px;
-    }
-
-    .text {
-        font-size: 2em;
-        text-align: center;
-    }
 }
 
 .game-1 {
@@ -142,6 +126,10 @@ main {
     font-size: 3em;
 }
 
+.left {
+    width: 258px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -150,4 +138,16 @@ a {
 a:visited {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-item {
+        width: 400px;
+        height: 470px;
+    }
+
+    .text {
+        font-size: 2em;
+        text-align: center;
+    }
 }
